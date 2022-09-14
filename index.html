@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 - Grupo 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <title>Fase 2 Grupo 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">RETO IA</p>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Clasificador de <br>Residuos</h1>
+        <a href="#lector"><button>INICIAR</button></a>
+    </section>
+
+    <section id="lector">
+        <h1>Lector IA</h1>
+        <div id="cam"></div>
+        <div id="mostar"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Grupo 1 "Reto IA Fase 2" - 2022</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        setTimeout(() => {
+            let fra = document.createDocumentFragment();
+            fra.append(document.querySelector("#defaultCanvas0"))
+            document.querySelector("#cam").append(fra);
+        }, 500);
+    </script>
+</body>
+</html>
